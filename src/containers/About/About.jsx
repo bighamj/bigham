@@ -16,7 +16,7 @@ const About = () => {
       description: [
         "Contributing and building products used at Lowe's via the Engineering Platforms and Architecture team.",
         "I manage several products, including critical applications which Lowe's depends upon to run it's retail business.",
-        "Products include click stream analytics, data extract, transfer, load (ETL) automation and MLOPS, and session replay for user experience managment and analysis.",
+        "Products include Leading multiple products and critical initiatives within the company, including clickstream analytics, data extract, transfer, load (ETL) automation and MLOPS, and session replay for user experience management and analysis.",
         "In my role, I also mentor junior team members to help them advance in their careers and improve the team overall.",
       ],
     },
