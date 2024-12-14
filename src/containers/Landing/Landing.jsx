@@ -51,9 +51,9 @@ const Landing = () => {
         />
         <CardContent>
           <Typography variant="h5" align={"center"}>
-            Senior Product Manager | Driving Innovation & Scalable Cloud
-            Solutions in Retail | Expert in Agile Methodologies,
-            Cross-Functional Leadership, AEC & Manufacturing Tech
+            Senior Product Manager with 10 years of leading teams to build
+            products with user-focussed mindset. Working experience with
+            multi-region teams, startups, and corporate environments.
           </Typography>
         </CardContent>
         <CardMedia image={me} title="Joshua Bigham" />
