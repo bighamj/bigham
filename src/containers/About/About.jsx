@@ -15,23 +15,19 @@ const About = () => {
       date: `May 2024 - Present`,
       description: [
         "Contributing and building products used at Lowe's via the Engineering Platforms and Architecture team.",
-        "Manage several products, including critical applications which Lowe's depends upon to run it's retail business. Products support 500k task runs for critical operations and up to 21k transactions per second (TPS) for click stream analytics.",
-        "Leading multiple products and critical initiatives within the company, including clickstream analytics, data extract, transfer, load (ETL) automation and MLOPS, and session replay for user experience management and analysis.",
-        "Mentor junior team members to help them advance in their careers and improve the team overall.",
+        "Lead high-impact products such as click stream analytics, ETL automation, and MLOps, driving revenue through 500k monthly tasks and 15k transactions per second.",
+        "Oversee product scaling efforts, ensuring successful launch and user adoption. ",
+        "Mentor junior team members, fostering a product-focused and user-centered mindset.",
       ],
     },
     {
       title: "Product Manager / Lead Developer",
-      company: "Virtual Technology Simplified",
+      company: "Virtual Technology Simplified (Acquired by Ceinsys Geospatial)",
       date: `Feb 2022 - May 2024 (2 Years 4 Months)`,
       description: [
-        "Lead team from concept to launch of product, managing and delivering all aspects of product development including roadmapping, developing, and deploying.",
-        "Prioritized roadmap in order to achieve product goals and metrics from concept to implementation.",
-        "Managed product demonstrations and support for performance evaluation.",
-        "Coordinated and lead internal and external development teams.",
-        "Mentored junior team members, fostering growth in their technical development knowledge and project management skills.",
-        "Integrated new technologies into existing systems, increasing capabilities and improving overall performance.",
-        "Tested and deployed scalable and highly available software products.",
+        "Led product development from concept to launch, scaling 3D data capture for thousands of job sites daily.",
+        "Drove product improvements, increasing user site efficiency by 80%.",
+        "Managed a cross-functional team, contributing to a successful company acquisition",
       ],
     },
     {
@@ -39,11 +35,9 @@ const About = () => {
       company: "FARO Technologies",
       date: `June 2018 - Feb 2022 (3 Years 9 Months)`,
       description: [
-        "Defined product requirements, road maps, and workflows for introduction to development teams, writing product requirements and usage scenarios.",
-        "Developed and maintained a prioritized list of enhancements/features based on revenue impact/cost savings.",
-        "Generated, coordinated internal teams, and ensured successful execution of release/launch plans, communicating needs and project status to product execution team.",
-        "Worked with a worldwide software development team to ensure that the product was delivered on time and with the features and quality expected by the customer.",
-        `Represented the "voice of the customer" to the R&D, customer service, supply chain, production, and total quality teams from ideation through launch and reach out to end users and potential customers on a regular schedule.`,
+        "Spearheaded multiple high-growth products, resulting in 120% quarter-over-quarter revenue increase.",
+        "Delivered executive-level initiatives and guided company strategy through customer interactions and technical demonstrations",
+        "Supported sales teams, closing deals via product evaluations and technical support.",
       ],
     },
     {
@@ -156,15 +150,15 @@ const About = () => {
       <Box>
         <ul>
           <li>
-            <strong>Patent</strong> - "Laser Projection System" 17/068217 ·
-            Filed May 20, 202117/068217 · A light projector and method of
-            aligning the light projector is provided. A light projector steers
-            an outgoing beam of light onto an object, passing light returned
-            from the object through a focusing lens onto an optical detector.
-            The light projector may generate a light pattern or template by
-            rapidly moving the outgoing beam of light along a path on a surface.
-            To place the light pattern/template in a desired location, the light
-            projector may be aligned with an electronic model.
+            <strong>Patent</strong> - "Laser Projection System" US-11988889-B2,
+            US20210149144-A1 · A light projector and method of aligning the
+            light projector is provided. A light projector steers an outgoing
+            beam of light onto an object, passing light returned from the object
+            through a focusing lens onto an optical detector. The light
+            projector may generate a light pattern or template by rapidly moving
+            the outgoing beam of light along a path on a surface. To place the
+            light pattern/template in a desired location, the light projector
+            may be aligned with an electronic model.
           </li>
         </ul>
       </Box>

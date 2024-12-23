@@ -51,9 +51,11 @@ const Landing = () => {
         />
         <CardContent>
           <Typography variant="h5" align={"center"}>
-            Senior Product Manager with 10 years of leading teams to build
-            products with user-focussed mindset. Working experience with
-            multi-region teams, startups, and corporate environments.
+            Experienced Product Manager with 10+ years of driving user-centric
+            innovation, scaling enterprise products, and leading cross
+            functional teams. Proven track record in leveraging data-driven
+            strategies to deliver high-impact results for Fortune 500 companies
+            and startups
           </Typography>
         </CardContent>
         <CardMedia image={me} title="Joshua Bigham" />
