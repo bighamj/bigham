@@ -1,47 +1,46 @@
-import { IconButton, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import * as React from "react";
 import Typography from "@mui/material/Typography";
-import InfoIcon from "@mui/icons-material/Info";
+import * as React from "react";
 
 export default function Images() {
   const itemData = [
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/autodesk-project.jpg",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/advanced-layout.webp",
       title: "Digital Design Layout Research",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/telecom.jpeg",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/telecom.webp",
       title: "Telecom Collection",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/hydrodam.jpg",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/hydrodam.webp",
       title: "Hydro-dam Alignment",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/concrete.JPG",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/concrete.webp",
       title: "Concrete Analysis",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/prefabricated-construction.jpg",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/prefabricated-construction.webp",
       title: "Prefabricated Construction",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/concrete-analysis.JPG",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/concrete-analysis.webp",
       title: "Floor Flatness Verificaiton",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/advanced-layout.JPG",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/advanced-layout.webp",
       title: "Advanced 3D Layout",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/mep.JPG",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/mep.webp",
       title: "Mechanical Electrical Plumbing (MEP) Coordination",
     },
     {
-      img: "https://bigham-joshua-site.s3.amazonaws.com/windturbineinspection.JPG",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/windturbineinspection.webp",
       title: "Wind Turbine Inspection",
     },
   ];

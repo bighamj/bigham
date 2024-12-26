@@ -3,7 +3,7 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import me from "../../assets/smallme.png";
+import me from "../../assets/smallme.webp";
 
 const Landing = () => {
   const color = useTheme().palette;
@@ -15,7 +15,7 @@ const Landing = () => {
       sx={{
         height: "100vh",
         padding: "20px",
-        backgroundImage: `url(https://bigham-joshua-site.s3.amazonaws.com/bentwood.JPG)`,
+        backgroundImage: `url(https://bigham-joshua-site.s3.us-east-1.amazonaws.com/bentwood.avif)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
