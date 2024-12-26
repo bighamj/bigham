@@ -1,11 +1,9 @@
 import { Card, CardContent, useTheme } from "@mui/material";
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import me from "../../assets/me.png";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import me from "../../assets/smallme.png";
 
 const Landing = () => {
   const color = useTheme().palette;
@@ -27,7 +25,7 @@ const Landing = () => {
     >
       <Card
         sx={{
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
+          backgroundColor: "rgba(255, 255, 255, 0.9)",
         }}
       >
         <CardHeader
@@ -43,19 +41,19 @@ const Landing = () => {
           image={me}
           title="Joshua Bigham"
           style={{
-            height: "300px",
-            width: "300px",
+            height: "200px",
+            width: "200px",
             borderRadius: "50%",
             margin: "10px auto",
           }}
         />
         <CardContent>
-          <Typography variant="h5" align={"center"}>
+          <Typography variant={"h6"} align={"center"}>
             Experienced Product Manager with 10+ years of driving user-centric
             innovation, scaling enterprise products, and leading cross
             functional teams. Proven track record in leveraging data-driven
             strategies to deliver high-impact results for Fortune 500 companies
-            and startups
+            and startups.
           </Typography>
         </CardContent>
         <CardMedia image={me} title="Joshua Bigham" />

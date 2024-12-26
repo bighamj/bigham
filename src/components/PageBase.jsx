@@ -26,14 +26,6 @@ const PageBase = (props) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar>
-          <img
-            src={smallMe}
-            style={{
-              width: "40px",
-              borderRadius: "50%",
-              marginRight: "10px",
-            }}
-          />
           <Typography
             variant="h6"
             component="div"

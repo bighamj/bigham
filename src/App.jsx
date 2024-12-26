@@ -41,8 +41,8 @@ const App = () => {
       >
         <PageBase>
           <Landing />
-          <Images />
           <About />
+          <Images />
           <Contact />
         </PageBase>
       </Stack>

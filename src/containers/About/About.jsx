@@ -1,3 +1,4 @@
+import { Button, Card, CardActions, CardContent, Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Step from "@mui/material/Step";
@@ -80,16 +81,18 @@ const About = () => {
   const skills = [
     "Product Management",
     "Product Development",
+    "Agile",
+    "SAFe",
+    "Mentoring",
+    "Distributed Teams",
+    "CAD",
+    "GIS",
+    "Reality Capture",
     "Product Marketing",
-    "Javascript",
-    "React.js",
-    "React Native",
-    "Node.js",
-    "Express.js",
+    "Javascript (React, React Native, Node, Express)",
     "MongoDB",
-    "AWS",
+    "AWS (S3, EC2, Rekognition, Lambda)",
     "Docker",
-    "AWS Lambda",
     "Swift",
     "ARKit (SceneKit, RealityKit)",
   ];
@@ -106,7 +109,71 @@ const About = () => {
       alignItems={"center"}
       spacing={4}
     >
-      <Typography variant="h2">Work Experience</Typography>
+      <Typography variant="h3">Work Experience</Typography>
+      <Typography variant="h4">Products I've Worked On</Typography>
+      <Stack spacing={3} direction={{ xs: "column", sm: "row" }}>
+        <Card>
+          <CardContent>
+            <Typography variant="h6">Click Stream Analytics</Typography>
+            <Typography>
+              Lowe’s Internal tool for click stream data capture, scaled 2.5X
+              during holiday sales season.
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <Typography variant="h6">Airflow</Typography>
+            <Typography>
+              Lowe’s Internally hosted Airflow instance to handle 500k tasks per
+              month for critical applications.
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <Typography variant="h6">360Capture</Typography>
+            <Typography>
+              Capture 3D scan and photos of job sites, and manage them in a web
+              portal.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button href="https://www.vtscapture.com/">Learn More</Button>
+          </CardActions>
+        </Card>
+        <Card>
+          <CardContent>
+            <Typography variant="h6">FARO Sphere</Typography>
+            <Typography>
+              A cloud-based digital reality platform that provides its users a
+              centralized, collaborative experience across the company’s reality
+              capture and 3D modeling applications.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button href="https://www.faro.com/en/LP/FARO-Sphere">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+        <Card>
+          <CardContent>
+            <Typography variant="h6">BuildIT Construction</Typography>
+            <Typography>
+              Automate inspection and layout of 3D construction data for
+              continuous construction verification.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button href="https://www.faro.com/en/Products/Software/BuildIT-Construction">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      </Stack>
+
+      <Typography variant="h4">Resume</Typography>
       <Stepper orientation="vertical">
         {experience.map((job, index) => {
           return (
@@ -133,24 +200,26 @@ const About = () => {
           );
         })}
       </Stepper>
-      <Typography variant="h4">Education</Typography>
-      <Box>
-        <h3>University of South Florida</h3>
-        <h4>Bachelors of Science in Mechanical Engineering</h4>
-      </Box>
-      <Typography variant="h4">Skills</Typography>
-      <Box>
-        <ul>
-          {skills.map((skill, index) => {
-            return <li key={index}>{skill}</li>;
-          })}
-        </ul>
-      </Box>
-      <Typography variant="h4">Accomplishments</Typography>
+      <Typography variant="h4">Education & Skills</Typography>
+      <Stack spacing={3} direction={{ xs: "column", sm: "row" }}>
+        <Box>
+          <h3>University of South Florida</h3>
+          <h4>Bachelors of Science in Mechanical Engineering</h4>
+        </Box>
+        <Box>
+          <ul>
+            {skills.map((skill, index) => {
+              return <li key={index}>{skill}</li>;
+            })}
+          </ul>
+        </Box>
+      </Stack>
+
+      <Typography variant="h4">Patent</Typography>
       <Box>
         <ul>
           <li>
-            <strong>Patent</strong> - "Laser Projection System" US-11988889-B2,
+            <strong>"Laser Projection System"</strong> - US-11988889-B2,
             US20210149144-A1 · A light projector and method of aligning the
             light projector is provided. A light projector steers an outgoing
             beam of light onto an object, passing light returned from the object
