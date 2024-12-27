@@ -1,8 +1,12 @@
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import Button from "@mui/material/Button";
 
 const PageBase = (props) => {
   const handleScroll = (id) => {
@@ -32,24 +36,28 @@ const PageBase = (props) => {
           >
             Joshua Bigham
           </Typography>
-          {/* <Button
+          <IconButton
             color="inherit"
-            variant="text"
             onClick={() => {
               handleScroll("about");
             }}
-          >
-            About
-          </Button>
-          <Button
+          />
+          <IconButton
             color="inherit"
-            variant="text"
-            onClick={() => {
-              handleScroll("contact");
-            }}
+            href="mailto:jbigham0517@gmail.com"
+            aria-label="Email"
+            sx={{ alignSelf: "center" }}
           >
-            Contact
-          </Button> */}
+            <EmailIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            href="https://www.linkedin.com/in/joshuabigham/"
+            aria-label="LinkedIn"
+            sx={{ alignSelf: "center" }}
+          >
+            <LinkedInIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Box>{props.children}</Box>

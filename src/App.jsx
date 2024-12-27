@@ -1,13 +1,11 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import Stack from "@mui/material/Stack";
-import Images from "./containers/Images/Images";
 import PageBase from "./components/PageBase";
 import About from "./containers/About/About";
-import Contact from "./containers/Contact/Contact";
+import Images from "./containers/Images/Images";
 import Landing from "./containers/Landing/Landing";
 
 const App = () => {
-  // Color theme for the app
   const theme = createTheme({
     typography: {
       fontFamily: "Georgia, serif",
@@ -43,7 +41,6 @@ const App = () => {
           <Landing />
           <About />
           <Images />
-          <Contact />
         </PageBase>
       </Stack>
     </ThemeProvider>

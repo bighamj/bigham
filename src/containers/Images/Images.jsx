@@ -8,7 +8,7 @@ import * as React from "react";
 export default function Images() {
   const itemData = [
     {
-      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/advanced-layout.webp",
+      img: "https://bigham-joshua-site.s3.us-east-1.amazonaws.com/autodesk-project.webp",
       title: "Digital Design Layout Research",
     },
     {
