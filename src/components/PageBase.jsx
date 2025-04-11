@@ -7,6 +7,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import Button from "@mui/material/Button";
+import { PictureAsPdf } from "@mui/icons-material";
 
 const PageBase = (props) => {
   const handleScroll = (id) => {
@@ -57,6 +58,14 @@ const PageBase = (props) => {
             sx={{ alignSelf: "center" }}
           >
             <LinkedInIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            href="https://rxresu.me/bighamj/joshua-bigham"
+            aria-label="Resume"
+            sx={{ alignSelf: "center" }}
+          >
+            <PictureAsPdf />
           </IconButton>
         </Toolbar>
       </AppBar>

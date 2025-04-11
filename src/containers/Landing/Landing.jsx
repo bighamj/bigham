@@ -55,11 +55,12 @@ const Landing = () => {
           <Fade>
             <CardContent>
               <Typography variant={"h6"} align={"center"}>
-                Experienced Product Manager with 10+ years of driving
-                user-centric innovation, scaling enterprise products, and
-                leading cross functional teams. Proven track record in
-                leveraging data-driven strategies to deliver high-impact results
-                for Fortune 500 companies and startups.
+                <b>Experienced Technical Product Manager </b>
+                with 10+ years of experience building scalable internal
+                platforms, developer tools, and data infrastructure. I’ve led
+                cross-functional teams to deliver systems that power real-time
+                analytics, automate complex workflows, and reduce operational
+                overhead across industries including AEC, lidar, and retail.
               </Typography>
             </CardContent>
           </Fade>

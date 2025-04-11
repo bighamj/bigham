@@ -16,10 +16,9 @@ const About = () => {
       company: "Lowe's Companies, Inc.",
       date: `May 2024 - Present`,
       description: [
-        "Contributing and building products used at Lowe's via the Engineering Platforms and Architecture team.",
-        "Lead high-impact products such as click stream analytics, ETL automation, and MLOps, driving revenue through 500k monthly tasks and 15k transactions per second.",
-        "Drive cost saving initiatives, saving approximately $4 million annually.",
-        "Mentor junior team members, fostering a product-focused and user-centered mindset.",
+        "Delivered internal platform products powering clickstream analytics and ETL automation, enabling 15k+ transactions/sec and orchestrating 500k+ monthly Airflow jobs across mission-critical retail systems.",
+        "Led architecture and adoption of in-house analytics platform, reducing third-party tool costs and improving data latency — generating ~$4M in annual savings.",
+        "Mentored PMs and engineers on platform thinking and user-centered design, aligning execution with long-term strategy.",
       ],
     },
     {
@@ -27,9 +26,8 @@ const About = () => {
       company: "Virtual Technology Simplified (Acquired by Ceinsys Geospatial)",
       date: `Feb 2022 - May 2024 (2 Years 4 Months)`,
       description: [
-        "Led product development from concept to launch, scaling 3D data capture for thousands of job sites daily.",
-        "Drove product improvements, increasing user site efficiency by 80%.",
-        "Managed a cross-functional team, contributing to a successful company acquisition",
+        "Built and launched a scalable 3D capture platform from the ground up (React, Node.js, AWS). Automated field-data processing, reducing time on site by 80% and powering daily ops across thousands of job sites.",
+        "Product strategy and execution contributed to Ceinsys’ acquisition of VTS — driven by rapid growth in field ops adoption and differentiated 3D capture capabilities.",
       ],
     },
     {
@@ -37,9 +35,8 @@ const About = () => {
       company: "FARO Technologies",
       date: `June 2018 - Feb 2022 (3 Years 9 Months)`,
       description: [
-        "Spearheaded multiple high-growth products, resulting in 120% quarter-over-quarter revenue increase.",
-        "Delivered executive-level initiatives and guided company strategy through customer interactions and technical demonstrations",
-        "Supported sales teams, closing deals via product evaluations and technical support.",
+        "Drove development and launch of cloud collaboration (Sphere) and 3D data inspection (BuildIT) tools. Achieved 120% QoQ revenue growth by aligning feature delivery with high-value workflows for construction and manufacturing customers.",
+        "Delivered executive-level initiatives and guided company strategy through customer interactions and technical demonstrations.",
       ],
     },
     {

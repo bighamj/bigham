@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import PageBase from "./components/PageBase";
-
+import React from "react";
 // Lazy load the components
 const About = React.lazy(() => import("./containers/About/About"));
 const Images = React.lazy(() => import("./containers/Images/Images"));
