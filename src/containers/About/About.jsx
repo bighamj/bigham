@@ -18,7 +18,7 @@ const About = () => {
       description: [
         "Contributing and building products used at Lowe's via the Engineering Platforms and Architecture team.",
         "Lead high-impact products such as click stream analytics, ETL automation, and MLOps, driving revenue through 500k monthly tasks and 15k transactions per second.",
-        "Oversee product scaling efforts, ensuring successful launch and user adoption. ",
+        "Drive cost saving initiatives, saving approximately $4 million annually.",
         "Mentor junior team members, fostering a product-focused and user-centered mindset.",
       ],
     },
@@ -100,19 +100,24 @@ const About = () => {
 
   const products = [
     {
-      title: "Click Stream Analytics",
+      title: "User Journey Tracking",
       description:
-        "Lowe’s Internal tool for click stream data capture, scaled 2.5X during holiday sales season.",
+        "Aiding teams to understand how end users interact with their applicaitons.",
     },
     {
       title: "Airflow",
       description:
-        "Lowe’s Internally hosted Airflow instance to handle 500k tasks per month for critical applications.",
+        "Internally hosted and customized Airflow to handle business critical applications.",
+    },
+    {
+      title: "Tesseract",
+      description:
+        "Automated and scheduled test execution for end to end testing.",
     },
     {
       title: "360Capture",
       description:
-        "Capture 3D scan and photos of job sites, and manage them in a web portal.",
+        "Leverage the knowledge of your team to provide real-time data on the condition of your assets and equipment via data collection.",
       link: "https://www.vtscapture.com/",
       linkText: "360Capture",
     },
