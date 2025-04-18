@@ -7,6 +7,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Fade, Pulse } from "react-swift-reveal";
 import me from "../assets/smallme.webp";
+import bentwood from "../assets/bentwood.avif";
 
 const Landing = () => {
   const color = useTheme().palette;
@@ -20,7 +21,7 @@ const Landing = () => {
         sx={{
           height: "100vh",
           padding: "20px",
-          backgroundImage: `url(https://bigham-joshua-site.s3.us-east-1.amazonaws.com/bentwood.avif)`,
+          backgroundImage: `url(${bentwood})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

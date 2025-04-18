@@ -1,14 +1,13 @@
+import { PictureAsPdf } from "@mui/icons-material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Tooltip } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import Button from "@mui/material/Button";
-import { PictureAsPdf } from "@mui/icons-material";
-import { Tooltip } from "@mui/material";
 
 const PageBase = (props) => {
   const handleScroll = (id) => {
