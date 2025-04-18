@@ -2,9 +2,9 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import React from "react";
 import PageBase from "./components/PageBase";
-const About = React.lazy(() => import("./containers/About/About"));
-const Images = React.lazy(() => import("./containers/Images/Images"));
-const Landing = React.lazy(() => import("./containers/Landing/Landing"));
+const About = React.lazy(() => import("./containers/About"));
+const Images = React.lazy(() => import("./containers/Images"));
+const Landing = React.lazy(() => import("./containers/Landing"));
 
 const App = () => {
   const theme = createTheme({

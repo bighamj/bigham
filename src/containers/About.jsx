@@ -1,6 +1,9 @@
-import { Button, Card, CardActions, CardContent } from "@mui/material";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import CardActions from "@mui/material/CardActions";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Step from "@mui/material/Step";
@@ -10,12 +13,12 @@ import Stepper from "@mui/material/Stepper";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { Fade } from "react-swift-reveal";
-import capture from "../../assets/360Capture.webp";
-import airflow from "../../assets/airflow.png";
-import buildit from "../../assets/buildit.jpg";
-import sphere from "../../assets/sphere.webp";
-import testkube from "../../assets/testkube.png";
-import usf from "../../assets/usf.png";
+import capture from "../assets/360Capture.webp";
+import airflow from "../assets/airflow.png";
+import buildit from "../assets/buildit.jpg";
+import sphere from "../assets/sphere.webp";
+import testkube from "../assets/testkube.png";
+import usf from "../assets/usf.png";
 
 const About = () => {
   const experience = [
@@ -311,7 +314,7 @@ const About = () => {
                 alt="USF Logo"
                 style={{
                   width: "80px",
-                  height: "auto",
+                  height: "80px",
                   borderRadius: "10px",
                 }}
               />

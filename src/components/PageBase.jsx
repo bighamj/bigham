@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { PictureAsPdf } from "@mui/icons-material";
+import { Tooltip } from "@mui/material";
 
 const PageBase = (props) => {
   const handleScroll = (id) => {
@@ -37,36 +38,37 @@ const PageBase = (props) => {
           >
             Joshua Bigham
           </Typography>
-          <IconButton
-            color="inherit"
-            onClick={() => {
-              handleScroll("about");
-            }}
-          />
-          <IconButton
-            color="inherit"
-            href="mailto:jbigham0517@gmail.com"
-            aria-label="Email"
-            sx={{ alignSelf: "center" }}
-          >
-            <EmailIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://www.linkedin.com/in/joshuabigham/"
-            aria-label="LinkedIn"
-            sx={{ alignSelf: "center" }}
-          >
-            <LinkedInIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://rxresu.me/bighamj/joshua-bigham"
-            aria-label="Resume"
-            sx={{ alignSelf: "center" }}
-          >
-            <PictureAsPdf />
-          </IconButton>
+          <Tooltip title="Email Me">
+            <IconButton
+              color="inherit"
+              href="mailto:jbigham0517@gmail.com"
+              aria-label="Email"
+              sx={{ alignSelf: "center" }}
+            >
+              <EmailIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="View LinkedIn">
+            {" "}
+            <IconButton
+              color="inherit"
+              href="https://www.linkedin.com/in/joshuabigham/"
+              aria-label="LinkedIn"
+              sx={{ alignSelf: "center" }}
+            >
+              <LinkedInIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Download Resume">
+            <IconButton
+              color="inherit"
+              href="https://rxresu.me/bighamj/joshua-bigham"
+              aria-label="Resume"
+              sx={{ alignSelf: "center" }}
+            >
+              <PictureAsPdf />
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
       <Box>{props.children}</Box>

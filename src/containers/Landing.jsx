@@ -1,10 +1,12 @@
-import { Card, CardContent, useTheme } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { useTheme } from "@mui/material/styles";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Fade, Pulse } from "react-swift-reveal";
-import me from "../../assets/smallme.webp";
+import me from "../assets/smallme.webp";
 
 const Landing = () => {
   const color = useTheme().palette;
