@@ -1,5 +1,7 @@
 import { Button, Card, CardActions, CardContent } from "@mui/material";
 import Box from "@mui/material/Box";
+import CardMedia from "@mui/material/CardMedia";
+import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Step from "@mui/material/Step";
 import StepContent from "@mui/material/StepContent";
@@ -8,6 +10,12 @@ import Stepper from "@mui/material/Stepper";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import { Fade } from "react-swift-reveal";
+import capture from "../../assets/360Capture.webp";
+import airflow from "../../assets/airflow.png";
+import buildit from "../../assets/buildit.jpg";
+import sphere from "../../assets/sphere.webp";
+import testkube from "../../assets/testkube.png";
+import usf from "../../assets/usf.png";
 
 const About = () => {
   const experience = [
@@ -76,23 +84,74 @@ const About = () => {
     },
   ];
 
-  const skills = [
-    "Product Management",
-    "Product Development",
-    "Agile",
-    "SAFe",
-    "Mentoring",
-    "Distributed Teams",
-    "CAD",
-    "GIS",
-    "Reality Capture",
-    "Product Marketing",
-    "Javascript (React, React Native, Node, Express)",
-    "MongoDB",
-    "AWS (S3, EC2, Rekognition, Lambda)",
-    "Docker",
-    "Swift",
-    "ARKit (SceneKit, RealityKit)",
+  const newSkills = [
+    {
+      category: "Certifications",
+      skills: [
+        "Certified Scrum Product Owner (CSPO)",
+        "Google Data Analytics Certificate",
+        "Google Project Management Certificate",
+        "AWS Fundamentals Specialization",
+        "Google Agile Project Management",
+        "Bentley Accredited Developer: iTwin Platform - Associate",
+      ],
+    },
+    {
+      category: "Technical Skills",
+      skills: [
+        "Javascript (React, React Native, Node.js, Express)",
+        "Python",
+        "AWS (EC2, S3, Lambda, Rekognition, Pipelines)",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "SQL",
+        "Swift",
+        "ARKit (SceneKit, RealityKit)",
+        "NoSQL (MongoDB)",
+      ],
+    },
+    {
+      category: "Product Tools",
+      skills: ["Jira", "Confluence", "Figma", "Miro"],
+    },
+    {
+      category: "Product Management Skills",
+      skills: [
+        "Agile",
+        "SAFe",
+        "Scrum",
+        "Kanban",
+        "User-Centered Design",
+        "Design Thinking",
+        "Product Roadmapping",
+        "Stakeholder Management",
+      ],
+    },
+    {
+      category: "Soft Skills",
+      skills: [
+        "Mentoring",
+        "Collaboration",
+        "Communication",
+        "Problem Solving",
+        "Critical Thinking",
+        "Adaptability",
+      ],
+    },
+    {
+      category: "Other Skills",
+      skills: [
+        "CAD (SolidWorks, AutoCAD)",
+        "GIS (ArcGIS)",
+        "Reality Capture",
+        "3D Modeling",
+        "Laser Scanning",
+        "Photogrammetry",
+      ],
+    },
   ];
 
   const products = [
@@ -100,16 +159,19 @@ const About = () => {
       title: "User Journey Tracking",
       description:
         "Aiding teams to understand how end users interact with their applicaitons.",
+      image: "",
     },
     {
       title: "Airflow",
       description:
         "Internally hosted and customized Airflow to handle business critical applications.",
+      image: airflow,
     },
     {
       title: "Tesseract",
       description:
-        "Automated and scheduled test execution for end to end testing.",
+        "Internally hosted automated and scheduled test execution for end to end testing.",
+      image: testkube,
     },
     {
       title: "360Capture",
@@ -117,6 +179,7 @@ const About = () => {
         "Leverage the knowledge of your team to provide real-time data on the condition of your assets and equipment via data collection.",
       link: "https://www.vtscapture.com/",
       linkText: "360Capture",
+      image: capture,
     },
     {
       title: "FARO Sphere",
@@ -124,6 +187,7 @@ const About = () => {
         "A cloud-based digital reality platform that provides its users a centralized, collaborative experience across the company’s reality capture and 3D modeling applications.",
       link: "https://www.faro.com/en/LP/FARO-Sphere",
       linkText: "Faro Sphere",
+      image: sphere,
     },
     {
       title: "BuildIT Construction",
@@ -131,6 +195,7 @@ const About = () => {
         "Automate inspection and layout of 3D construction data for continuous construction verification.",
       link: "https://www.faro.com/en/Products/Software/BuildIT-Construction",
       linkText: "BuildIT Construction",
+      image: buildit,
     },
   ];
 
@@ -152,11 +217,37 @@ const About = () => {
       <Fade>
         <Typography variant="h4">Products I've Worked On</Typography>
         <Stack
-          spacing={{ xs: 2, lg: 4 }}
-          direction={{ sx: "column", md: "row" }}
+          spacing={4}
+          direction="row"
+          flexWrap="wrap"
+          useFlexGap
+          justifyContent="center"
+          alignItems="center"
         >
           {products.map((product, index) => (
-            <Card key={index} sx={{ width: 200 }}>
+            <Card
+              key={index}
+              sx={{
+                padding: 2,
+                borderRadius: 3,
+                boxShadow: 3,
+                maxWidth: 300,
+              }}
+            >
+              {product.image && (
+                <CardMedia
+                  component="img"
+                  sx={{
+                    width: "100%",
+                    objectFit: "contain",
+                    height: "100px",
+                    padding: "10px",
+                    borderRadius: "10px",
+                  }}
+                  image={product.image}
+                  alt={product.title}
+                />
+              )}
               <CardContent>
                 <Typography variant="h6">{product.title}</Typography>
                 <Typography>{product.description}</Typography>
@@ -202,18 +293,72 @@ const About = () => {
       </Stepper>
       <Fade>
         <Typography variant="h4">Education & Skills</Typography>
-        <Stack spacing={3} direction={{ xs: "column", sm: "row" }}>
-          <Box>
-            <h3>University of South Florida</h3>
-            <h4>Bachelors of Science in Mechanical Engineering</h4>
-          </Box>
-          <Box>
-            <ul>
-              {skills.map((skill, index) => {
-                return <li key={index}>{skill}</li>;
-              })}
-            </ul>
-          </Box>
+        <Stack spacing={4} direction={{ xs: "column", sm: "row" }}>
+          <Card
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              padding: 2,
+              borderRadius: 3,
+              boxShadow: 3,
+              maxWidth: 600,
+              width: "100%",
+            }}
+          >
+            <Box sx={{ flexShrink: 0, marginRight: 2 }}>
+              <img
+                src={usf}
+                alt="USF Logo"
+                style={{
+                  width: "80px",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </Box>
+            <CardContent sx={{ padding: 0 }}>
+              <Typography variant="h6" component="div" fontWeight={600}>
+                University of South Florida
+              </Typography>
+              <Typography variant="subtitle1" color="text.secondary">
+                B.S. in Mechanical Engineering
+              </Typography>
+            </CardContent>
+          </Card>
+        </Stack>
+        <Stack
+          spacing={4}
+          direction="row"
+          flexWrap="wrap"
+          useFlexGap
+          justifyContent="center"
+          alignItems="center"
+        >
+          {newSkills.map((skill, index) => (
+            <Card
+              key={index}
+              sx={{
+                padding: 2,
+                borderRadius: 3,
+                boxShadow: 3,
+                maxWidth: 300,
+              }}
+            >
+              <CardContent>
+                <Typography variant="h6">{skill.category}</Typography>
+                <Stack spacing={1} direction="row" flexWrap="wrap" useFlexGap>
+                  {skill.skills.map((skill, idx) => (
+                    <Chip
+                      key={idx}
+                      label={skill}
+                      color="primary"
+                      variant="outlined"
+                    />
+                  ))}
+                </Stack>
+              </CardContent>
+            </Card>
+          ))}
         </Stack>
       </Fade>
       <Fade>
