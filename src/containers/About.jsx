@@ -102,9 +102,18 @@ const About = () => {
     {
       category: "Technical Skills",
       skills: [
-        "Javascript (React, React Native, Node.js, Express)",
+        "Javascript",
+        "React",
+        "React Native",
+        "Node.js",
+        "Express.js",
         "Python",
-        "AWS (EC2, S3, Lambda, Rekognition, Pipelines)",
+        "AWS",
+        "EC2",
+        "S3",
+        "Lambda",
+        "Rekognition",
+        "Pipelines",
         "Docker",
         "Kubernetes",
         "Git",
@@ -118,7 +127,15 @@ const About = () => {
     },
     {
       category: "Product Tools",
-      skills: ["Jira", "Confluence", "Figma", "Miro"],
+      skills: [
+        "Jira",
+        "Confluence",
+        "Figma",
+        "Miro",
+        "Slack",
+        "Zoom",
+        "Microsoft Teams",
+      ],
     },
     {
       category: "Product Management Skills",
@@ -131,6 +148,9 @@ const About = () => {
         "Design Thinking",
         "Product Roadmapping",
         "Stakeholder Management",
+        "Requirements Gathering",
+        "User Story Mapping",
+        "Backlog Prioritization",
       ],
     },
     {
@@ -142,6 +162,7 @@ const About = () => {
         "Problem Solving",
         "Critical Thinking",
         "Adaptability",
+        "Leadership",
       ],
     },
     {
@@ -356,6 +377,7 @@ const About = () => {
                       label={skill}
                       color="primary"
                       variant="outlined"
+                      sx={{ margin: "2px" }}
                     />
                   ))}
                 </Stack>
@@ -367,19 +389,17 @@ const About = () => {
       <Fade>
         <Typography variant="h4">Patent</Typography>
         <Box>
-          <ul>
-            <li>
-              <strong>"Laser Projection System"</strong> - US-11988889-B2,
-              US20210149144-A1 · A light projector and method of aligning the
-              light projector is provided. A light projector steers an outgoing
-              beam of light onto an object, passing light returned from the
-              object through a focusing lens onto an optical detector. The light
-              projector may generate a light pattern or template by rapidly
-              moving the outgoing beam of light along a path on a surface. To
-              place the light pattern/template in a desired location, the light
-              projector may be aligned with an electronic model.
-            </li>
-          </ul>
+          <p>
+            <strong>"Laser Projection System"</strong> - US-11988889-B2,
+            US20210149144-A1 · A light projector and method of aligning the
+            light projector is provided. A light projector steers an outgoing
+            beam of light onto an object, passing light returned from the object
+            through a focusing lens onto an optical detector. The light
+            projector may generate a light pattern or template by rapidly moving
+            the outgoing beam of light along a path on a surface. To place the
+            light pattern/template in a desired location, the light projector
+            may be aligned with an electronic model.
+          </p>
         </Box>
       </Fade>
     </Stack>

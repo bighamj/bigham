@@ -48,7 +48,6 @@ const PageBase = (props) => {
             </IconButton>
           </Tooltip>
           <Tooltip title="View LinkedIn">
-            {" "}
             <IconButton
               color="inherit"
               href="https://www.linkedin.com/in/joshuabigham/"

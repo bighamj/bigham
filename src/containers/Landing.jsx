@@ -14,16 +14,17 @@ const Landing = () => {
 
   return (
     <Fade>
-      {" "}
       <Stack
         spacing={4}
         direction="row"
         sx={{
-          height: "100vh",
+          height: "auto",
+          minHeight: "100vh",
           padding: "20px",
           backgroundImage: `url(${bentwood})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          marginTop: { sm: "20px", md: "40px" },
         }}
         justifyContent={"center"}
         alignItems={"center"}
@@ -32,6 +33,7 @@ const Landing = () => {
         <Card
           sx={{
             backgroundColor: "rgba(255, 255, 255, 0.9)",
+            width: { xs: "90%", sm: "70%", md: "50%" },
           }}
         >
           <CardHeader
