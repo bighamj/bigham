@@ -60,12 +60,14 @@ const Landing = () => {
           <Fade>
             <CardContent>
               <Typography variant={"h6"} align={"center"}>
-                <b>Experienced Technical Product Manager </b>
-                with 10+ years of experience building scalable internal
-                platforms, developer tools, and data infrastructure. I’ve led
-                cross-functional teams to deliver systems that power real-time
-                analytics, automate complex workflows, and reduce operational
-                overhead across industries including AEC, lidar, and retail.
+                <b> Senior Product Leader </b>
+                with 10+ years delivering scalable internal platforms, developer
+                tools, and analytics infrastructure. Proven success leading
+                cross-functional teams and mentoring PMs, with impact across
+                AEC, lidar, and retail. Deep experience in platform strategy,
+                product lifecycle management, and driving operational efficiency
+                at scale. Passionate about building tools that accelerate teams,
+                automate workflows, and unlock data-driven decisions.
               </Typography>
             </CardContent>
           </Fade>

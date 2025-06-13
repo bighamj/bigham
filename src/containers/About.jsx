@@ -27,9 +27,10 @@ const About = () => {
       company: "Lowe's Companies, Inc.",
       date: `May 2024 - Present`,
       description: [
-        "Delivered internal platform products powering clickstream analytics and ETL automation, enabling 15k+ transactions/sec and orchestrating 500k+ monthly Airflow jobs across mission-critical retail systems.",
-        "Led architecture and adoption of in-house analytics platform, reducing third-party tool costs and improving data latency — generating ~$4M in annual savings.",
-        "Mentored PMs and engineers on platform thinking and user-centered design, aligning execution with long-term strategy.",
+        "Define and execute roadmap for internal platform products enabling ETL automation, clickstream analytics, and QA test automation. Leading a portfolio of internal tools serving engineering, QA, and analytics teams, aligning delivery with broader organizational OKRs.",
+        "Drove ~$4M in annual savings by replacing third-party tools with custom internal solutions.",
+        "Mentoring 2 direct PMs and engineers, aligning tactical delivery with long-term platform strategy and contributing to community of practice through workshops on product tooling to 50 junior PMs.",
+        "Evangelize platform usage across org, increasing adoption from one store to 800+ stores in under 3 months.",
       ],
     },
     {
@@ -37,8 +38,10 @@ const About = () => {
       company: "Virtual Technology Simplified (Acquired by Ceinsys Geospatial)",
       date: `Feb 2022 - May 2024 (2 Years 4 Months)`,
       description: [
-        "Built and launched a scalable 3D capture platform from the ground up (React, Node.js, AWS). Automated field-data processing, reducing time on site by 80% and powering daily ops across thousands of job sites.",
-        "Product strategy and execution contributed to Ceinsys’ acquisition of VTS — driven by rapid growth in field ops adoption and differentiated 3D capture capabilities.",
+        "Built and scaled a 3D capture platform (React, Node.js, AWS) from 0 → 1, supporting daily ops on thousands of job sites.",
+        "Owned end-to-end product development: discovery, design, delivery, and rollout.",
+        "Reduced on-site time by 80% via field-data automation, directly driving acquisition by Ceinsys.",
+        "Collaborated with engineering, sales, and ops to ensure adoption and ROI realization.",
       ],
     },
     {
@@ -46,8 +49,9 @@ const About = () => {
       company: "FARO Technologies",
       date: `June 2018 - Feb 2022 (3 Years 9 Months)`,
       description: [
-        "Drove development and launch of cloud collaboration (Sphere) and 3D data inspection (BuildIT) tools. Achieved 120% QoQ revenue growth by aligning feature delivery with high-value workflows for construction and manufacturing customers.",
-        "Delivered executive-level initiatives and guided company strategy through customer interactions and technical demonstrations.",
+        "Launched cloud collaboration and 3D inspection tools for construction and manufacturing use cases.",
+        "Delivered 120% QoQ revenue growth by prioritizing high-value workflows via user interviews and journey mapping.",
+        "Partnered with sales and customer success to improve onboarding and retention.",
       ],
     },
     {
@@ -347,6 +351,7 @@ const About = () => {
               <Typography variant="subtitle1" color="text.secondary">
                 B.S. in Mechanical Engineering
               </Typography>
+              <Typography color="text.secondary">2009 - 2015</Typography>
             </CardContent>
           </Card>
         </Stack>
