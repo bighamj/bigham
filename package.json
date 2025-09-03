@@ -17,6 +17,10 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@statsig/js-client": "^3.24.4",
+    "@statsig/react-bindings": "^3.24.4",
+    "@statsig/session-replay": "^3.24.4",
+    "@statsig/web-analytics": "^3.24.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-swift-reveal": "^1.1.0"
