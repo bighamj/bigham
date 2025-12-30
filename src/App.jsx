@@ -2,6 +2,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import React from "react";
 import PageBase from "./components/PageBase";
+import Tracker from "@openreplay/tracker";
 import { StatsigProvider, useClientAsyncInit } from "@statsig/react-bindings";
 import { StatsigAutoCapturePlugin } from "@statsig/web-analytics";
 import { StatsigSessionReplayPlugin } from "@statsig/session-replay";
@@ -43,6 +44,18 @@ const App = () => {
       ],
     }
   );
+
+  React.useEffect(() => {
+    const tracker = new Tracker({
+      projectKey: "YleRcFjP1lvLO4NSv6K4",
+    });
+
+    tracker.start();
+    // Get current date + random string to simulate different users
+    const date = new Date();
+    const randomString = Math.random().toString(36).substring(2, 15);
+    tracker.setUserID(`josh-${date}-${randomString}`);
+  }, []);
 
   return (
     <StatsigProvider client={client}>

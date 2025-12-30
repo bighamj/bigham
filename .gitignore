@@ -25,3 +25,8 @@ dist-ssr
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# K6
+k6-browser
+k6-browser.exe
+k6.exe

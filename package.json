@@ -9,14 +9,19 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
+    "k6": "k6 run ./k6/scroll_test.js",
+    "k6:build": "xk6 build --with github.com/grafana/xk6-browser@latest --output k6-browser",
+    "k6:run:browser": ".\\k6-browser run ./k6/scroll_test.js",
+    "k6:browser": "k6-browser run ./k6/scroll_test.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@openreplay/tracker": "^17.0.0",
     "@statsig/js-client": "^3.24.4",
     "@statsig/react-bindings": "^3.24.4",
     "@statsig/session-replay": "^3.24.4",
