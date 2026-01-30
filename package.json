@@ -24,7 +24,7 @@
     "@openreplay/tracker": "^17.0.0",
     "@statsig/js-client": "^3.24.4",
     "@statsig/react-bindings": "^3.24.4",
-    "@statsig/session-replay": "^3.24.4",
+    "@statsig/session-replay": "^3.31.1",
     "@statsig/web-analytics": "^3.24.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
