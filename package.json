@@ -22,7 +22,7 @@
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
     "@openreplay/tracker": "^17.0.0",
-    "@statsig/js-client": "^3.24.4",
+    "@statsig/js-client": "^3.31.1",
     "@statsig/react-bindings": "^3.24.4",
     "@statsig/session-replay": "^3.24.4",
     "@statsig/web-analytics": "^3.24.4",

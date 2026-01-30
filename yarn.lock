@@ -791,12 +791,24 @@
   resolved "https://registry.yarnpkg.com/@statsig/client-core/-/client-core-3.31.0.tgz#decec1aaf147f5e283fe1dda2239368ec4ad3ea4"
   integrity sha512-SuxQD6TmVszPG7FoMKwTk/uyBuVFk7XnxI3T/E0uyb7PL7GNjONtfsoh+NqBBVUJVse0CUeSFfgJPoZy1ZOslQ==
 
-"@statsig/js-client@3.31.0", "@statsig/js-client@^3.24.4":
+"@statsig/client-core@3.31.2":
+  version "3.31.2"
+  resolved "https://registry.yarnpkg.com/@statsig/client-core/-/client-core-3.31.2.tgz#556ff33b5194847d6bd5097e5f4a52cde9055887"
+  integrity sha512-Tfa3JC0fJJL0Pd13Le9ZxqZp1QD8XKQ9pyPaBeyhpB6QWzr6qqGusGFaSmmCJXu9ViN672Lgg87/43mANg2LBw==
+
+"@statsig/js-client@3.31.0":
   version "3.31.0"
   resolved "https://registry.yarnpkg.com/@statsig/js-client/-/js-client-3.31.0.tgz#344b498c4915eff6b2ad548da86adfc7050ba2a1"
   integrity sha512-LFa5E0LjT6sTfZv3sNGoyRLSZ1078+agdgOA+Vm1ecjG+KbSOfBLTW7hMwimrJ29slRwbYDzbtKaPJo/R37N2g==
   dependencies:
     "@statsig/client-core" "3.31.0"
+
+"@statsig/js-client@^3.31.1":
+  version "3.31.2"
+  resolved "https://registry.yarnpkg.com/@statsig/js-client/-/js-client-3.31.2.tgz#1d7321aac86fe08de890422ad0236abf50253b99"
+  integrity sha512-uEIt2Zg0NTgIhg4jaMQYtdttrTDgQRtlk4E8N6cNBcq2i/Igea1DzVYD7RyEV9oiq3InHDOfuuP+p+w5oO+qeA==
+  dependencies:
+    "@statsig/client-core" "3.31.2"
 
 "@statsig/react-bindings@^3.24.4":
   version "3.31.0"
