@@ -13,7 +13,7 @@ const Landing = React.lazy(() => import("./containers/Landing"));
 const App = () => {
   const theme = createTheme({
     typography: {
-      fontFamily: "Georgia, serif",
+      fontFamily: "Google Sans, serif",
       fontWeightLight: 400,
       fontWeightRegular: 400,
       fontWeightMedium: 400,
