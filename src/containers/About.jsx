@@ -34,7 +34,7 @@ const About = () => {
         "Define and execute roadmap for internal platform products enabling ETL automation, clickstream analytics, and QA test automation",
         "Drove ~$4M in annual savings by replacing third-party tools with custom internal solutions",
         "Mentoring 2 direct PMs and engineers; lead workshops on product tooling for 50+ junior PMs",
-        "Evangelized platform adoption from 1 store to 800+ stores in under 3 months",
+        "Evangelized platform adoption from 1 store to 1700+ stores",
       ],
       impact: "$4M+ saved annually",
     },
@@ -103,7 +103,7 @@ const About = () => {
       company: "Lowe's",
       description:
         "User journey tracking platform enabling teams to understand end-user behavior and optimize conversion funnels.",
-      metrics: ["800+ stores onboarded", "Real-time insights", "ETL automation"],
+      metrics: ["1700+ stores onboarded", "Real-time insights", "ETL automation"],
       image: "",
       status: "Internal Platform",
     },
